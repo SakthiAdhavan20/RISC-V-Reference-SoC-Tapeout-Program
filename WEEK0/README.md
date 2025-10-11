@@ -52,3 +52,38 @@ $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
 ![Alt Text](Images/gtkwave_installation.png)
+
+#### <ins>**Ngspice**</ins>
+```bash
+$ sudo apt update
+$ sudo apt install ngspice
+```
+![Alt Text](Images/Ngspice.png)
+
+#### <ins>**Magic VLSI**</ins>
+```bash
+# Install required dependencies
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+
+# Clone Magic repository
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+
+# Configure build
+./configure
+
+# Build Magic
+make
+
+# Install system-wide
+sudo make install
+```
+![Alt Text](Images/Magic.png)
+
